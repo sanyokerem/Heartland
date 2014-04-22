@@ -6,6 +6,7 @@ use Payum\ApiAwareInterface;
 use Payum\Bridge\Spl\ArrayObject;
 use Payum\Exception\UnsupportedApiException;
 use Payum\Heartland\Model\PaymentDetails;
+use Payum\Heartland\Soap\Base\MakeBlindPaymentResponse;
 use Payum\Heartland\Soap\Base\MakePaymentRequest;
 use Payum\Request\CaptureRequest;
 use Payum\Request\UserInputRequiredInteractiveRequest;
@@ -31,13 +32,14 @@ class MakeBlindPaymentAction extends BaseAction
         $soapRequest = $model->getRequest();
         $soapRequest->setCredential($this->api->getMerchantCredentials($model->getMerchantName()));
 
+        /** @var MakeBlindPaymentResponse $response */
         $response = $this->api->getSoapClient()->MakeBlindPayment($soapRequest);
 
         //FIXME add new chain
-        if ($response instanceof Response) {
-            $model->setResponse($response);
-        } else {
+        if ($response instanceof MakeBlindPaymentResponse) {
             $model->setResponse($response->getMakeBlindPaymentResult());
+        } else {
+            $model->setResponse($response);
         }
     }
 
