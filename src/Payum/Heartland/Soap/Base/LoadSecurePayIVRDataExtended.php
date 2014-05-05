@@ -6,24 +6,24 @@ namespace Payum\Heartland\Soap\Base;
  * This class is generated from the following WSDL:
  * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd0
  */
-class LoadSecurePayBillData
+class LoadSecurePayIVRDataExtended
 {
     /**
      * request
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q45:LoadSecurePayBillDataRequest
+     * - SchemaType: q51:LoadSecurePayIVRDataExtendedRequest
      *
-     * @var LoadSecurePayBillDataRequest
+     * @var LoadSecurePayIVRDataExtendedRequest
      */
     protected $request = null;
 
     /**
-     * @param LoadSecurePayBillDataRequest $request
+     * @param LoadSecurePayIVRDataExtendedRequest $request
      *
-     * @return LoadSecurePayBillData
+     * @return LoadSecurePayIVRDataExtended
      */
-    public function setRequest(LoadSecurePayBillDataRequest $request)
+    public function setRequest(LoadSecurePayIVRDataExtendedRequest $request)
     {
         $this->request = $request;
 
@@ -31,12 +31,12 @@ class LoadSecurePayBillData
     }
 
     /**
-     * @return LoadSecurePayBillDataRequest
+     * @return LoadSecurePayIVRDataExtendedRequest
      */
     public function getRequest()
     {
         if (null === $this->request) {
-            $this->request = new LoadSecurePayBillDataRequest();
+            $this->request = new LoadSecurePayIVRDataExtendedRequest();
         }
 
         return $this->request;

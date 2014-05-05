@@ -6,24 +6,24 @@ namespace Payum\Heartland\Soap\Base;
  * This class is generated from the following WSDL:
  * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd0
  */
-class LoadSecurePayBillData
+class RegisterTokenToAdditionalMerchant
 {
     /**
      * request
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q45:LoadSecurePayBillDataRequest
+     * - SchemaType: q43:RegisterTokenToAdditionalMerchantRequest
      *
-     * @var LoadSecurePayBillDataRequest
+     * @var RegisterTokenToAdditionalMerchantRequest
      */
     protected $request = null;
 
     /**
-     * @param LoadSecurePayBillDataRequest $request
+     * @param RegisterTokenToAdditionalMerchantRequest $request
      *
-     * @return LoadSecurePayBillData
+     * @return RegisterTokenToAdditionalMerchant
      */
-    public function setRequest(LoadSecurePayBillDataRequest $request)
+    public function setRequest(RegisterTokenToAdditionalMerchantRequest $request)
     {
         $this->request = $request;
 
@@ -31,12 +31,12 @@ class LoadSecurePayBillData
     }
 
     /**
-     * @return LoadSecurePayBillDataRequest
+     * @return RegisterTokenToAdditionalMerchantRequest
      */
     public function getRequest()
     {
         if (null === $this->request) {
-            $this->request = new LoadSecurePayBillDataRequest();
+            $this->request = new RegisterTokenToAdditionalMerchantRequest();
         }
 
         return $this->request;

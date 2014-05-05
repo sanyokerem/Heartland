@@ -4,7 +4,7 @@ namespace Payum\Heartland\Soap\Base;
 
 /**
  * This class is generated from the following WSDL:
- * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd4
+ * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd5
  */
 class AESCardData
 {

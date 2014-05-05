@@ -12,7 +12,7 @@ class AddAccountToPreAuthorizedPayment
      * AddAccountToPreAuthorizedPaymentRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q65:AddAccountToPreAuthorizedPaymentRequest
+     * - SchemaType: q69:AddAccountToPreAuthorizedPaymentRequest
      *
      * @var AddAccountToPreAuthorizedPaymentRequest
      */

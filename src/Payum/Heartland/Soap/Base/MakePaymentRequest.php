@@ -19,6 +19,16 @@ class MakePaymentRequest extends MerchantRequest
     protected $ACHAccountsToCharge = null;
 
     /**
+     * ACHCardsToCharge
+     *
+     * The property has the following characteristics/restrictions:
+     * - SchemaType: tns:ArrayOfACHCardToCharge
+     *
+     * @var ArrayOfACHCardToCharge
+     */
+    protected $ACHCardsToCharge = null;
+
+    /**
      * AESCreditCardsToCharge
      *
      * The property has the following characteristics/restrictions:
@@ -160,6 +170,30 @@ class MakePaymentRequest extends MerchantRequest
         }
 
         return $this->ACHAccountsToCharge;
+    }
+
+    /**
+     * @param ArrayOfACHCardToCharge $aCHCardsToCharge
+     *
+     * @return MakePaymentRequest
+     */
+    public function setACHCardsToCharge(ArrayOfACHCardToCharge $aCHCardsToCharge)
+    {
+        $this->ACHCardsToCharge = $aCHCardsToCharge;
+
+        return $this;
+    }
+
+    /**
+     * @return ArrayOfACHCardToCharge
+     */
+    public function getACHCardsToCharge()
+    {
+        if (null === $this->ACHCardsToCharge) {
+            $this->ACHCardsToCharge = new ArrayOfACHCardToCharge();
+        }
+
+        return $this->ACHCardsToCharge;
     }
 
     /**

@@ -12,7 +12,7 @@ class CloseCurrentCardBatch
      * CloseCurrentCardBatchRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q73:CloseCurrentCardBatchRequest
+     * - SchemaType: q77:CloseCurrentCardBatchRequest
      *
      * @var CloseCurrentCardBatchRequest
      */

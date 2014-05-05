@@ -32,7 +32,7 @@ class GetACHReturnsByDateResponse extends GetFileResponse
      * GetACHReturnsByDateResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q68:GetACHReturnsByDateResponse
+     * - SchemaType: q72:GetACHReturnsByDateResponse
      *
      * @var GetACHReturnsByDateResponse
      */

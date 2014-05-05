@@ -12,7 +12,7 @@ class VoidPreAuthorizedTransactionResponse extends Response
      * VoidPreAuthorizedTransactionResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q70:VoidPreAuthorizedTransactionResponse
+     * - SchemaType: q74:VoidPreAuthorizedTransactionResponse
      *
      * @var VoidPreAuthorizedTransactionResponse
      */

@@ -23,4 +23,5 @@ class PaymentMethod
     const MASTERCARDDEBIT = 'MastercardDebit';
     const DISCOVERDEBIT = 'DiscoverDebit';
     const AMERICANEXPRESSDEBIT = 'AmericanExpressDebit';
+    const ACHCARD = 'ACHCard';
 }

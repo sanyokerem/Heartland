@@ -4,9 +4,9 @@ namespace Payum\Heartland\Soap\Base;
 
 /**
  * This class is generated from the following WSDL:
- * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd5
+ * https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?xsd=xsd4
  */
-class CardHolderData
+class ACHCardHolderData
 {
     /**
      * Address
@@ -101,7 +101,7 @@ class CardHolderData
     /**
      * @param string $address
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setAddress($address)
     {
@@ -121,7 +121,7 @@ class CardHolderData
     /**
      * @param string $city
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setCity($city)
     {
@@ -141,7 +141,7 @@ class CardHolderData
     /**
      * @param string $email
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setEmail($email)
     {
@@ -161,7 +161,7 @@ class CardHolderData
     /**
      * @param string $firstName
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setFirstName($firstName)
     {
@@ -181,7 +181,7 @@ class CardHolderData
     /**
      * @param string $lastName
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setLastName($lastName)
     {
@@ -201,7 +201,7 @@ class CardHolderData
     /**
      * @param string $nameOnCard
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setNameOnCard($nameOnCard)
     {
@@ -221,7 +221,7 @@ class CardHolderData
     /**
      * @param string $phone
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setPhone($phone)
     {
@@ -241,7 +241,7 @@ class CardHolderData
     /**
      * @param string $state
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setState($state)
     {
@@ -261,7 +261,7 @@ class CardHolderData
     /**
      * @param string $zip
      *
-     * @return CardHolderData
+     * @return ACHCardHolderData
      */
     public function setZip($zip)
     {

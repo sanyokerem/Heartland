@@ -16,4 +16,5 @@ class Gateway
     const TRANSMODUS = 'Transmodus';
     const POSGATEWAYDEBITSALE = 'POSGatewayDebitSale';
     const ACHGATEWAY = 'ACHGateway';
+    const ACHCARDGATEWAY = 'ACHCardGateway';
 }

@@ -42,7 +42,7 @@ class PreAuthorizePaymentResponse extends Response
      * PreAuthorizePaymentResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q56:PreAuthorizePaymentResponse
+     * - SchemaType: q60:PreAuthorizePaymentResponse
      *
      * @var PreAuthorizePaymentResponse
      */

@@ -12,7 +12,7 @@ class ClearTextCardToCharge extends CardToCharge
      * ClearTextCreditCard
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q4:ClearTextCardData
+     * - SchemaType: q5:ClearTextCardData
      *
      * @var ClearTextCardData
      */

@@ -49,24 +49,24 @@ class ReversePaymentByOrderIDRequest extends MerchantRequest
     protected $FeeAmountToRefund = null;
 
     /**
-     * OrderID
+     * OrderIDOfReversal
      *
      * The property has the following characteristics/restrictions:
      * - SchemaType: xs:string
      *
      * @var string
      */
-    protected $OrderID = null;
+    protected $OrderIDOfReversal = null;
 
     /**
-     * OrderIDToVoid
+     * OrderIDToReverse
      *
      * The property has the following characteristics/restrictions:
      * - SchemaType: xs:string
      *
      * @var string
      */
-    protected $OrderIDToVoid = null;
+    protected $OrderIDToReverse = null;
 
     /**
      * @param float $baseAmountToRefund
@@ -149,13 +149,13 @@ class ReversePaymentByOrderIDRequest extends MerchantRequest
     }
 
     /**
-     * @param string $orderID
+     * @param string $orderIDOfReversal
      *
      * @return ReversePaymentByOrderIDRequest
      */
-    public function setOrderID($orderID)
+    public function setOrderIDOfReversal($orderIDOfReversal)
     {
-        $this->OrderID = $orderID;
+        $this->OrderIDOfReversal = $orderIDOfReversal;
 
         return $this;
     }
@@ -163,19 +163,19 @@ class ReversePaymentByOrderIDRequest extends MerchantRequest
     /**
      * @return string
      */
-    public function getOrderID()
+    public function getOrderIDOfReversal()
     {
-        return $this->OrderID;
+        return $this->OrderIDOfReversal;
     }
 
     /**
-     * @param string $orderIDToVoid
+     * @param string $orderIDToReverse
      *
      * @return ReversePaymentByOrderIDRequest
      */
-    public function setOrderIDToVoid($orderIDToVoid)
+    public function setOrderIDToReverse($orderIDToReverse)
     {
-        $this->OrderIDToVoid = $orderIDToVoid;
+        $this->OrderIDToReverse = $orderIDToReverse;
 
         return $this;
     }
@@ -183,8 +183,8 @@ class ReversePaymentByOrderIDRequest extends MerchantRequest
     /**
      * @return string
      */
-    public function getOrderIDToVoid()
+    public function getOrderIDToReverse()
     {
-        return $this->OrderIDToVoid;
+        return $this->OrderIDToReverse;
     }
 }

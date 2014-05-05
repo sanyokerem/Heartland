@@ -12,7 +12,7 @@ class AESCardToCharge extends CardToCharge
      * AESCreditCard
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q3:AESCardData
+     * - SchemaType: q4:AESCardData
      *
      * @var AESCardData
      */

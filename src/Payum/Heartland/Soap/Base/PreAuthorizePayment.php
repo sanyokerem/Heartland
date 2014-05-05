@@ -12,7 +12,7 @@ class PreAuthorizePayment
      * PreAuthorizePaymentRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q55:PreAuthorizePaymentRequest
+     * - SchemaType: q59:PreAuthorizePaymentRequest
      *
      * @var PreAuthorizePaymentRequest
      */

@@ -12,7 +12,7 @@ class E3CardToCharge extends CardToCharge
      * E3CreditCard
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q5:E3CardData
+     * - SchemaType: q6:E3CardData
      *
      * @var E3CardData
      */

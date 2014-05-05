@@ -12,7 +12,7 @@ class ReversePaymentByOrderID
      * ReversePaymentByOrderIDRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q77:ReversePaymentByOrderIDRequest
+     * - SchemaType: q81:ReversePaymentByOrderIDRequest
      *
      * @var ReversePaymentByOrderIDRequest
      */

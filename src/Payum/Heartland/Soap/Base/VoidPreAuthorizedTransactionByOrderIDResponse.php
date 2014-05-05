@@ -12,7 +12,7 @@ class VoidPreAuthorizedTransactionByOrderIDResponse
      * VoidPreAuthorizedTransactionByOrderIDResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q80:VoidPreAuthorizedTransactionResponse
+     * - SchemaType: q84:VoidPreAuthorizedTransactionResponse
      *
      * @var VoidPreAuthorizedTransactionResponse
      */

@@ -12,7 +12,7 @@ class VoidPreAuthorizedTransaction
      * VoidPreAuthorizedTransactionRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q69:VoidPreAuthorizedTransactionRequest
+     * - SchemaType: q73:VoidPreAuthorizedTransactionRequest
      *
      * @var VoidPreAuthorizedTransactionRequest
      */

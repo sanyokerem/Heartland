@@ -12,7 +12,7 @@ class AddAccountToPreAuthorizedPaymentResponse extends PreAuthorizePaymentRespon
      * AddAccountToPreAuthorizedPaymentResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q66:AddAccountToPreAuthorizedPaymentResponse
+     * - SchemaType: q70:AddAccountToPreAuthorizedPaymentResponse
      *
      * @var AddAccountToPreAuthorizedPaymentResponse
      */

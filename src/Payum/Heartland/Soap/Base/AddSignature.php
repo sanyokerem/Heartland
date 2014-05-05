@@ -12,7 +12,7 @@ class AddSignature
      * AddSignatureRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q59:AddSignatureRequest
+     * - SchemaType: q63:AddSignatureRequest
      *
      * @var AddSignatureRequest
      */

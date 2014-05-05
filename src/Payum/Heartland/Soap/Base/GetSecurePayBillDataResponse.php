@@ -382,7 +382,7 @@ class GetSecurePayBillDataResponse extends Response
      * GetSecurePayBillDataResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q50:GetSecurePayBillDataResponse
+     * - SchemaType: q54:GetSecurePayBillDataResponse
      *
      * @var GetSecurePayBillDataResponse
      */

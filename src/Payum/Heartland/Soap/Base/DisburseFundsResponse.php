@@ -42,7 +42,7 @@ class DisburseFundsResponse extends Response
      * DisburseFundsResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q64:DisburseFundsResponse
+     * - SchemaType: q68:DisburseFundsResponse
      *
      * @var DisburseFundsResponse
      */

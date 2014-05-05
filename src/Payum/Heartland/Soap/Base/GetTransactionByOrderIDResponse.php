@@ -12,7 +12,7 @@ class GetTransactionByOrderIDResponse
      * GetTransactionByOrderIDResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q76:GetTransactionResponse
+     * - SchemaType: q80:GetTransactionResponse
      *
      * @var GetTransactionResponse
      */

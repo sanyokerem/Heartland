@@ -12,7 +12,7 @@ class E3DebitCardWithPINToCharge extends CardToCharge
      * E3DebitCardWithPIN
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q6:E3DebitCardWithPINData
+     * - SchemaType: q7:E3DebitCardWithPINData
      *
      * @var E3DebitCardWithPINData
      */

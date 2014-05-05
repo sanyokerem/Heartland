@@ -12,7 +12,7 @@ class RemovePreAuthorizedAccount
      * RemovePreAuthorizedAccountRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q71:RemovePreAuthorizedAccountRequest
+     * - SchemaType: q75:RemovePreAuthorizedAccountRequest
      *
      * @var RemovePreAuthorizedAccountRequest
      */

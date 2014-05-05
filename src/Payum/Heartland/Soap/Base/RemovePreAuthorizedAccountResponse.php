@@ -12,7 +12,7 @@ class RemovePreAuthorizedAccountResponse extends Response
      * RemovePreAuthorizedAccountResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q72:RemovePreAuthorizedAccountResponse
+     * - SchemaType: q76:RemovePreAuthorizedAccountResponse
      *
      * @var RemovePreAuthorizedAccountResponse
      */

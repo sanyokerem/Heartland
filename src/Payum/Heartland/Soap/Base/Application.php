@@ -28,4 +28,5 @@ class Application
     const MERCHANTVIEW = 'MerchantView';
     const MOBILECASHIER = 'MobileCashier';
     const MOBILECASHIERMOTO = 'MobileCashierMOTO';
+    const SECUREPAYIVR = 'SecurePayIVR';
 }

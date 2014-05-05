@@ -12,7 +12,7 @@ class GetTransactionByOrderID
      * GetTransactionByOrderIDRequest
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q75:GetTransactionByOrderIDRequest
+     * - SchemaType: q79:GetTransactionByOrderIDRequest
      *
      * @var GetTransactionByOrderIDRequest
      */

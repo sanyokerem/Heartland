@@ -22,7 +22,7 @@ class CloseCurrentCardBatchResponse extends Response
      * CloseCurrentCardBatchResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q74:CloseCurrentCardBatchResponse
+     * - SchemaType: q78:CloseCurrentCardBatchResponse
      *
      * @var CloseCurrentCardBatchResponse
      */

@@ -22,7 +22,7 @@ class ReversePaymentByOrderIDResponse extends ReversePaymentResponse
      * ReversePaymentByOrderIDResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q78:ReversePaymentByOrderIDResponse
+     * - SchemaType: q82:ReversePaymentByOrderIDResponse
      *
      * @var ReversePaymentByOrderIDResponse
      */

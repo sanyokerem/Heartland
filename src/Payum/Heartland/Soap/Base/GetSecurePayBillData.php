@@ -12,7 +12,7 @@ class GetSecurePayBillData
      * request
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q49:GetSecurePayBillDataRequest
+     * - SchemaType: q53:GetSecurePayBillDataRequest
      *
      * @var GetSecurePayBillDataRequest
      */

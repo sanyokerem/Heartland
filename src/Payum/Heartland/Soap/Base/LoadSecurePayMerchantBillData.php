@@ -12,7 +12,7 @@ class LoadSecurePayMerchantBillData
      * request
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q45:LoadSecurePayMerchantBillDataRequest
+     * - SchemaType: q47:LoadSecurePayMerchantBillDataRequest
      *
      * @var LoadSecurePayMerchantBillDataRequest
      */

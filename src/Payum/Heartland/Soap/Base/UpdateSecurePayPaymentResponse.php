@@ -12,7 +12,7 @@ class UpdateSecurePayPaymentResponse
      * UpdateSecurePayPaymentResult
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q52:Response
+     * - SchemaType: q56:Response
      *
      * @var Response
      */

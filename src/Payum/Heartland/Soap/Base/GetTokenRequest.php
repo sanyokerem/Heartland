@@ -12,7 +12,7 @@ class GetTokenRequest extends MerchantRequest
      * ACHAccountType
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q7:ACHAccountType
+     * - SchemaType: q8:ACHAccountType
      *
      * @var ACHAccountType
      */
@@ -22,7 +22,7 @@ class GetTokenRequest extends MerchantRequest
      * ACHDepositType
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q8:ACHDepositType
+     * - SchemaType: q9:ACHDepositType
      *
      * @var ACHDepositType
      */
@@ -32,7 +32,7 @@ class GetTokenRequest extends MerchantRequest
      * AccountHolderData
      *
      * The property has the following characteristics/restrictions:
-     * - SchemaType: q9:CardHolderData
+     * - SchemaType: q10:CardHolderData
      *
      * @var CardHolderData
      */

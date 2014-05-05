@@ -17,6 +17,8 @@ class Client extends BaseSoapClient
         'guid' => 'Payum\\Heartland\\Soap\\Base\\guid',
         'ACHAccountType' => 'Payum\\Heartland\\Soap\\Base\\ACHAccountType',
         'ACHDepositType' => 'Payum\\Heartland\\Soap\\Base\\ACHDepositType',
+        'ACHCardData' => 'Payum\\Heartland\\Soap\\Base\\ACHCardData',
+        'ACHCardHolderData' => 'Payum\\Heartland\\Soap\\Base\\ACHCardHolderData',
         'AESCardData' => 'Payum\\Heartland\\Soap\\Base\\AESCardData',
         'CardHolderData' => 'Payum\\Heartland\\Soap\\Base\\CardHolderData',
         'ClearTextCardData' => 'Payum\\Heartland\\Soap\\Base\\ClearTextCardData',
@@ -82,6 +84,8 @@ class Client extends BaseSoapClient
         'ACHAccountToCharge' => 'Payum\\Heartland\\Soap\\Base\\ACHAccountToCharge',
         'CardToCharge' => 'Payum\\Heartland\\Soap\\Base\\CardToCharge',
         'CardProcessingMethod' => 'Payum\\Heartland\\Soap\\Base\\CardProcessingMethod',
+        'ArrayOfACHCardToCharge' => 'Payum\\Heartland\\Soap\\Base\\ArrayOfACHCardToCharge',
+        'ACHCardToCharge' => 'Payum\\Heartland\\Soap\\Base\\ACHCardToCharge',
         'ArrayOfAESCardToCharge' => 'Payum\\Heartland\\Soap\\Base\\ArrayOfAESCardToCharge',
         'AESCardToCharge' => 'Payum\\Heartland\\Soap\\Base\\AESCardToCharge',
         'ArrayOfClearTextCardToCharge' => 'Payum\\Heartland\\Soap\\Base\\ArrayOfClearTextCardToCharge',
@@ -113,6 +117,7 @@ class Client extends BaseSoapClient
         'GetTokenRequest' => 'Payum\\Heartland\\Soap\\Base\\GetTokenRequest',
         'TokenPaymentMethod' => 'Payum\\Heartland\\Soap\\Base\\TokenPaymentMethod',
         'GetTokenResponse' => 'Payum\\Heartland\\Soap\\Base\\GetTokenResponse',
+        'RegisterTokenToAdditionalMerchantRequest' => 'Payum\\Heartland\\Soap\\Base\\RegisterTokenToAdditionalMerchantRequest',
         'LoadSecurePayBillDataRequest' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayBillDataRequest',
         'Request' => 'Payum\\Heartland\\Soap\\Base\\Request',
         'ArrayOfSecurePayBill' => 'Payum\\Heartland\\Soap\\Base\\ArrayOfSecurePayBill',
@@ -120,6 +125,8 @@ class Client extends BaseSoapClient
         'LoadSecurePayBillDataResponse' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayBillDataResponse',
         'LoadSecurePayMerchantBillDataRequest' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayMerchantBillDataRequest',
         'LoadSecurePayDataExtendedRequest' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayDataExtendedRequest',
+        'LoadSecurePayIVRDataExtendedRequest' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayIVRDataExtendedRequest',
+        'LoadSecurePayIVRDataResponse' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayIVRDataResponse',
         'GetSecurePayBillDataRequest' => 'Payum\\Heartland\\Soap\\Base\\GetSecurePayBillDataRequest',
         'GetSecurePayBillDataResponse' => 'Payum\\Heartland\\Soap\\Base\\GetSecurePayBillDataResponse',
         'SecurePayPaymentType' => 'Payum\\Heartland\\Soap\\Base\\SecurePayPaymentType',
@@ -192,11 +199,15 @@ class Client extends BaseSoapClient
         'GetReversalType' => 'Payum\\Heartland\\Soap\\Base\\GetReversalType',
         'GetConvenienceFee' => 'Payum\\Heartland\\Soap\\Base\\GetConvenienceFee',
         'GetToken' => 'Payum\\Heartland\\Soap\\Base\\GetToken',
+        'RegisterTokenToAdditionalMerchant' => 'Payum\\Heartland\\Soap\\Base\\RegisterTokenToAdditionalMerchant',
+        'RegisterTokenToAdditionalMerchantResponse' => 'Payum\\Heartland\\Soap\\Base\\RegisterTokenToAdditionalMerchantResponse',
         'LoadSecurePayBillData' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayBillData',
         'LoadSecurePayMerchantBillData' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayMerchantBillData',
         'LoadSecurePayMerchantBillDataResponse' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayMerchantBillDataResponse',
         'LoadSecurePayDataExtended' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayDataExtended',
         'LoadSecurePayDataExtendedResponse' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayDataExtendedResponse',
+        'LoadSecurePayIVRDataExtended' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayIVRDataExtended',
+        'LoadSecurePayIVRDataExtendedResponse' => 'Payum\\Heartland\\Soap\\Base\\LoadSecurePayIVRDataExtendedResponse',
         'GetSecurePayBillData' => 'Payum\\Heartland\\Soap\\Base\\GetSecurePayBillData',
         'UpdateSecurePayPayment' => 'Payum\\Heartland\\Soap\\Base\\UpdateSecurePayPayment',
         'UpdateSecurePayPaymentResponse' => 'Payum\\Heartland\\Soap\\Base\\UpdateSecurePayPaymentResponse',
@@ -557,6 +568,21 @@ class Client extends BaseSoapClient
     }
 
     /**
+     * RegisterTokenToAdditionalMerchant
+     *
+     * @param RegisterTokenToAdditionalMerchantRequest $request
+     *
+     * @return RegisterTokenToAdditionalMerchantResponse
+     */
+    public function RegisterTokenToAdditionalMerchant(RegisterTokenToAdditionalMerchantRequest $request)
+    {
+        $parameters = new RegisterTokenToAdditionalMerchant();
+        $parameters->setRequest($request);
+
+        return $this->__soapCall('RegisterTokenToAdditionalMerchant', array('parameters' => $parameters));
+    }
+
+    /**
      * LoadSecurePayBillData
      *
      * @param LoadSecurePayBillDataRequest $request
@@ -599,6 +625,21 @@ class Client extends BaseSoapClient
         $parameters->setRequest($request);
 
         return $this->__soapCall('LoadSecurePayDataExtended', array('parameters' => $parameters));
+    }
+
+    /**
+     * LoadSecurePayIVRDataExtended
+     *
+     * @param LoadSecurePayIVRDataExtendedRequest $request
+     *
+     * @return LoadSecurePayIVRDataExtendedResponse
+     */
+    public function LoadSecurePayIVRDataExtended(LoadSecurePayIVRDataExtendedRequest $request)
+    {
+        $parameters = new LoadSecurePayIVRDataExtended();
+        $parameters->setRequest($request);
+
+        return $this->__soapCall('LoadSecurePayIVRDataExtended', array('parameters' => $parameters));
     }
 
     /**
