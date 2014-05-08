@@ -6,6 +6,7 @@ use Payum\Heartland\Api;
 use Payum\Heartland\Action\MakeBlindPaymentAction;
 use Payum\Heartland\Action\GetTokenAction;
 use Payum\Heartland\Action\StatusAction;
+use Payum\Heartland\Action\RegisterTokenToAdditionalMerchantAction;
 
 abstract class PaymentFactory
 {
@@ -23,6 +24,7 @@ abstract class PaymentFactory
         $payment->addAction(new MakeBlindPaymentAction);
         $payment->addAction(new GetTokenAction);
         $payment->addAction(new StatusAction);
+        $payment->addAction(new RegisterTokenToAdditionalMerchantAction);
 
         return $payment;
     }
