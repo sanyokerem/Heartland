@@ -13,6 +13,8 @@ use Payum\Heartland\Soap\Base\MakePaymentRequest;
 use Payum\Heartland\Soap\Base\TokenPaymentMethod;
 use Payum\Heartland\Soap\Base\TokenToCharge;
 use Payum\Heartland\Soap\Base\Transaction;
+use Payum\Heartland\Soap\Base\RegisterTokenToAdditionalMerchantResponse;
+use Payum\Heartland\Soap\Base\RegisterTokenToAdditionalMerchantRequest;
 use Payum\Request\CaptureRequest;
 use Payum\Request\BinaryMaskStatusRequest;
 
@@ -175,5 +177,32 @@ class TokenTest extends BaseTestCase
         static::$amount = 1;
         static::$feeAmount = round(static::$amount * (2.95 / 100), 2);
         $this->makePayment();
+    }
+
+    /**
+     * @test
+     */
+    public function shouldAllowRegisterTokenToAdditionalMerchant()
+    {
+        $payment = $this->getPayment();
+
+        $request = new RegisterTokenToAdditionalMerchantRequest();
+        $request->setToken(static::$token);
+        $request->getRegisterToMerchantCredential()->setMerchantName($GLOBALS['__PAYUM_HEARTLAND_SECOND_MERCHANT_NAME']);
+
+        $paymentDetails = new PaymentDetails();
+        $paymentDetails->setMerchantName($GLOBALS['__PAYUM_HEARTLAND_MERCHANT_NAME']);
+        $paymentDetails->setRequest($request);
+
+        $captureRequest = new CaptureRequest($paymentDetails);
+        $payment->execute($captureRequest);
+
+        $statusRequest = new BinaryMaskStatusRequest($captureRequest->getModel());
+        $payment->execute($statusRequest);
+
+        /** @var RegisterTokenToAdditionalMerchantResponse $response */
+        $response = $statusRequest->getModel()->getResponse();
+
+        $this->assertTrue($statusRequest->isSuccess(), $paymentDetails->getMessages());
     }
 }

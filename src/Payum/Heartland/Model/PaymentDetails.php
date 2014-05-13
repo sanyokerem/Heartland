@@ -15,6 +15,7 @@ class PaymentDetails implements \ArrayAccess, \IteratorAggregate
      * @var mixed
      */
     protected $response;
+
     /**
      * @var string
      */
