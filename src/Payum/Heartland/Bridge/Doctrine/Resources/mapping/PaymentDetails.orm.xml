@@ -15,5 +15,7 @@
         <field name="transactionId" column="transaction_id" type="integer" nullable="true" />
 
         <field name="merchantName" column="merchant_name" type="string" nullable="true" />
+
+        <field name="batchId" column="batch_id" type="integer" nullable="true" />
     </mapped-superclass>
 </doctrine-mapping>

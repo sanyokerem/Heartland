@@ -3,6 +3,9 @@
 namespace Payum\Heartland\Model;
 
 use Payum\Heartland\Soap\Base\ArrayOfMessage;
+use Payum\Heartland\Soap\Base\Authorization;
+use Payum\Heartland\Soap\Base\AuthorizationType;
+use Payum\Heartland\Soap\Base\MakePaymentResponse;
 
 class PaymentDetails implements \ArrayAccess, \IteratorAggregate
 {
@@ -40,6 +43,8 @@ class PaymentDetails implements \ArrayAccess, \IteratorAggregate
      * @var string
      */
     protected $merchantName;
+
+    protected $batchId;
 
     /**
      * Set request
@@ -95,6 +100,17 @@ class PaymentDetails implements \ArrayAccess, \IteratorAggregate
 
         if (method_exists($response, 'getTransaction_ID')) {
             $this->setTransactionId($response->getTransaction_ID());
+        }
+
+        /** @var MakePaymentResponse $response */
+        if (method_exists($response, 'getAuthorizations')) {
+            /** @var Authorization $authorization */
+            foreach ($response->getAuthorizations()->getAuthorization() as $authorization) {
+                if ($authorization->getAuthorizationType() == AuthorizationType::BASE) {
+                    $this->setBatchId($authorization->getGatewayBatchID());
+                    break;
+                }
+            }
         }
 
         return $this;
@@ -218,6 +234,22 @@ class PaymentDetails implements \ArrayAccess, \IteratorAggregate
     public function getMerchantName()
     {
         return $this->merchantName;
+    }
+
+    /**
+     * @param int $batchId
+     */
+    public function setBatchId($batchId)
+    {
+        $this->batchId = $batchId;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBatchId()
+    {
+        return $this->batchId;
     }
 
     /**
