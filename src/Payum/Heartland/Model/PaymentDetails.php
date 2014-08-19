@@ -104,12 +104,19 @@ class PaymentDetails implements \ArrayAccess, \IteratorAggregate
 
         /** @var MakePaymentResponse $response */
         if (method_exists($response, 'getAuthorizations')) {
-            /** @var Authorization $authorization */
-            foreach ($response->getAuthorizations()->getAuthorization() as $authorization) {
-                if ($authorization->getAuthorizationType() == AuthorizationType::BASE) {
-                    $this->setBatchId($authorization->getGatewayBatchID());
-                    break;
+            $authorization = $response->getAuthorizations()->getAuthorization();
+            if (is_array($authorization)) {
+                /** @var Authorization $authorize */
+                foreach ($authorization as $authorize) {
+                    if ($authorize->getAuthorizationType() == AuthorizationType::BASE) {
+                        $this->setBatchId($authorize->getGatewayBatchID());
+                        break;
+                    }
                 }
+                return $this;
+            }
+            if ($authorization instanceof Authorization) {
+                $this->setBatchId($authorization->getGatewayBatchID());
             }
         }
 
