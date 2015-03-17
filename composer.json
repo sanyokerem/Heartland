@@ -1,9 +1,9 @@
 {
-    "name": "payum/heartland",
+    "name": "payum2/heartland",
     "type": "library",
     "description": "Heartland pro checkout",
     "keywords": ["payment", "heartland", "src", "library", "open source"],
-    "homepage": "https://github.com/66Ton99/Heartland",
+    "homepage": "https://github.com/Credit-Jeeves/Heartland",
     "license": "MIT",
     "authors": [
         {
@@ -26,7 +26,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "Payum\\Heartland": "src/" }
+        "psr-0": { "Payum2\\Heartland": "src/" }
     },
     "extra": {
         "branch-alias": {

@@ -19,7 +19,7 @@ To regenerate SOAP classes. Dev dependencies must be installed first.
 php vendor/besimple/wsdl2php/bin/wsdl2php.php \
     -w"https://heartlandpaymentservices.net/BillingDataManagement/v3/BillingDataManagementService.svc?wsdl" \
     -v2 \
-    -nPayum\\Heartland\\Soap\\Base \
+    -nPayum2\\Heartland\\Soap\\Base \
     -cClient \
     -osrc \
     --backup \

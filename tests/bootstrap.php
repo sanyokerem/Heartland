@@ -15,4 +15,4 @@ EOM;
     exit(1);
 }
 
-$loader->add('Payum\Heartland\Tests', __DIR__);
+$loader->add('Payum2\Heartland\Tests', __DIR__);
