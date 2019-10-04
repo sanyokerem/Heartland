@@ -12,15 +12,16 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "payum2/payum": "0.6.x-dev",
+        "php": "^7.1.3",
+        "payum/payum": "^1.5",
         "besimple/soap-common": "dev-master",
-        "ass/xmlsecurity": "dev-master"
+        "ass/xmlsecurity": "^1.1",
+        "php-http/guzzle6-adapter": "^1.1"
     },
     "require-dev": {
         "ext-curl": "*",
-        "besimple/wsdl2php": "dev-master",
-        "satooshi/php-coveralls": "dev-master"
+        "besimple/wsdl2php": "^1.0",
+        "satooshi/php-coveralls": "^2.1"
     },
     "config": {
         "bin-dir": "bin"
@@ -32,5 +33,6 @@
         "branch-alias": {
             "dev-master": "0.5-dev"
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
